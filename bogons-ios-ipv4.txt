@@ -10,6 +10,7 @@ ip prefix-list ipv4-bogons deny 192.168.0.0/16 le 32
 ip prefix-list ipv4-bogons deny 198.18.0.0/15 le 32
 ip prefix-list ipv4-bogons deny 198.51.100.0/24 le 32
 ip prefix-list ipv4-bogons deny 203.0.113.0/24 le 32
+ip prefix-list ipv4-bogons deny 224.0.0.0/3 le 32
 ip prefix-list ipv4-bogons deny 224.0.0.0/4 le 32
 ip prefix-list ipv4-bogons deny 240.0.0.0/4 le 32
 ip prefix-list ipv4-bogons permit any ge 8 le 24
