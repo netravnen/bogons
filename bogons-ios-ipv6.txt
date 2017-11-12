@@ -10,7 +10,6 @@ ipv6 prefix-list ipv6-bogons deny   2001:10::/28 le 128     ! deprecated (former
 ipv6 prefix-list ipv6-bogons deny   2001:20::/28 le 128     ! reserved for ORCHIDv2                        [RFC7343]
 ipv6 prefix-list ipv6-bogons deny   2001:db8::/32 le 128    ! reserved for Documentation                   [RFC3849]
 ipv6 prefix-list ipv6-bogons deny   2002::/16 le 128        ! reserved for 6to4                            [RFC3056]
-
 ipv6 prefix-list ipv6-bogons deny   0000::/8 le 128         ! Reserved by IETF     [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   0100::/8 le 128         ! Reserved by IETF     [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   0200::/7 le 128         ! Reserved by IETF     [RFC4048]
@@ -31,5 +30,4 @@ ipv6 prefix-list ipv6-bogons deny   fe00::/9 le 128         ! Reserved by IETF  
 ipv6 prefix-list ipv6-bogons deny   fe80::/10 le 128        ! Link-Scoped Unicast  [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   fec0::/10 le 128        ! Reserved by IETF     [RFC3879]
 ipv6 prefix-list ipv6-bogons deny   ff00::/8 le 128         ! Multicast            [RFC4291]
-
 ipv6 prefix-list ipv6-bogons permit any ge 29 le 64         ! Allow all other

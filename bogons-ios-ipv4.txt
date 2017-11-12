@@ -14,5 +14,4 @@ ip prefix-list ipv4-bogons deny 203.0.113.0/24 le 32        ! TEST-NET-3        
 ip prefix-list ipv4-bogons deny 224.0.0.0/3 le 32           ! Aggregated Class D and E
 ip prefix-list ipv4-bogons deny 224.0.0.0/4 le 32           ! Multicast (formerly Class D)                  [RFC5771]
 ip prefix-list ipv4-bogons deny 240.0.0.0/4 le 32           ! Future use (formerly Class E)                 [RFC1112]
-
 ip prefix-list ipv4-bogons permit any ge 8 le 24            ! Allow all other
