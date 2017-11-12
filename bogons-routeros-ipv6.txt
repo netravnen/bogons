@@ -1,3 +1,4 @@
+/routing prefix-lists
 add disabled=no action=discard chain=ipv6-bogons prefix=0000::/96       prefix-length=96-128 comment="Formerly defined as the IPv4-compatible-IPv6-address prefix"
 add disabled=no action=discard chain=ipv6-bogons prefix=64:ff9b:1::/48  prefix-length=48-128 comment="reserved for Local-Use IPv4/IPv6 Translation [RFC8215]"
 add disabled=no action=discard chain=ipv6-bogons prefix=2001:0000::/23  prefix-length=23-128 comment="reserved for IETF Protocol Assignments [RFC2928]"
