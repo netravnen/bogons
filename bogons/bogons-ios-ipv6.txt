@@ -16,7 +16,7 @@ ipv6 prefix-list ipv6-bogons deny   0200::/7 le 128        ! Reserved by IETF [R
 ipv6 prefix-list ipv6-bogons deny   0400::/6 le 128        ! Reserved by IETF [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   0800::/5 le 128        ! Reserved by IETF [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   1000::/4 le 128        ! Reserved by IETF [RFC4291]
-ipv6 prefix-list ipv6-bogons permit 2000::/3 ge 23 le 64   ! Global Unicast [RFC4291]
+ipv6 prefix-list ipv6-bogons permit 2000::/3 ge 29 le 64   ! Global Unicast [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   4000::/3 le 128        ! Reserved by IETF [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   6000::/3 le 128        ! Reserved by IETF [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   8000::/3 le 128        ! Reserved by IETF [RFC4291]
