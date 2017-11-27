@@ -30,4 +30,4 @@ ipv6 prefix-list ipv6-bogons deny   fe00::/9 le 128        ! Reserved by IETF [R
 ipv6 prefix-list ipv6-bogons deny   fe80::/10 le 128       ! Link-Scoped Unicast [RFC4291]
 ipv6 prefix-list ipv6-bogons deny   fec0::/10 le 128       ! Reserved by IETF [RFC3879]
 ipv6 prefix-list ipv6-bogons deny   ff00::/8 le 128        ! Multicast [RFC4291]
-ipv6 prefix-list ipv6-bogons permit 2000::/3 ge 29 le 48   ! Allow all other
+ipv6 prefix-list ipv6-bogons permit ::/0 ge 29 le 48       ! Allow all other
