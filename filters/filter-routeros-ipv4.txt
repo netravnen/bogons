@@ -1,0 +1,35 @@
+/ip firewall address-list
+add list=ipv4-bogons address=10.0.0.0/8      comment="Private-Use Networks [RFC1918]"
+add list=ipv4-bogons address=100.64.0.0/10   comment="Shared Address Space [RFC6598]"
+add list=ipv4-bogons address=127.0.0.0/8     comment="Loopback [RFC1122]"
+add list=ipv4-bogons address=169.254.0.0/16  comment="Link Local [RFC3927]"
+add list=ipv4-bogons address=172.16.0.0/12   comment="Private-Use Networks [RFC1918]"
+add list=ipv4-bogons address=192.0.0.0/24    comment="IPv4 Special Purpose Address Registry [RFC5736]"
+add list=ipv4-bogons address=192.0.2.0/24    comment="TEST-NET-1 [RFC5737]"
+add list=ipv4-bogons address=192.88.99.0/24  comment="6to4 Relay Anycast [RFC3068]"
+add list=ipv4-bogons address=192.168.0.0/16  comment="Private-Use Networks [RFC1918]"
+add list=ipv4-bogons address=198.18.0.0/15   comment="Network Interconnect Device Benchmark Testing [RFC2544]"
+add list=ipv4-bogons address=198.51.100.0/24 comment="TEST-NET-2 [RFC5737]"
+add list=ipv4-bogons address=203.0.113.0/24  comment="TEST-NET-3 [RFC5737]"
+add list=ipv4-bogons address=224.0.0.0/3     comment="Aggregated Class D and E"
+add list=ipv4-bogons address=224.0.0.0/4     comment="Multicast (formerly Class D) [RFC5771]"
+add list=ipv4-bogons address=240.0.0.0/4     comment="Future use (formerly Class E) [RFC1112]"
+
+/ip firewall address-list
+add list=ipv4-rfc1918 address=10.0.0.0/8      comment="Private-Use Networks [RFC1918]"
+add list=ipv4-rfc1918 address=172.16.0.0/12   comment="Private-Use Networks [RFC1918]"
+add list=ipv4-rfc1918 address=192.168.0.0/16  comment="Private-Use Networks [RFC1918]"
+
+/ip firewall address-list
+add list=ipv4-localonly address=127.0.0.0/8     comment="Loopback [RFC1122]"
+
+/ip firewall address-list
+add list=ipv4-linklocal address=169.254.0.0/16  comment="Link Local [RFC3927]"
+
+/ip firewall address-list
+add list=ipv4-testnets address=192.0.2.0/24    comment="TEST-NET-1 [RFC5737]"
+add list=ipv4-testnets address=198.51.100.0/24 comment="TEST-NET-2 [RFC5737]"
+add list=ipv4-testnets address=203.0.113.0/24  comment="TEST-NET-3 [RFC5737]"
+
+/ip firewall address-list
+add list=ipv4-multicast address=224.0.0.0/4     comment="Multicast (formerly Class D) [RFC5771]"
